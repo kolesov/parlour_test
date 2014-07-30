@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Parlor</title>
+	<!--[if lte IE 8]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="scripts/jquery-1.11.1.min.js"></script>
+	<script src="scripts/jquery-scrolltofixed.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="grid.css" />
+	<link type="text/css" rel="stylesheet" href="main.css" />
+</head>
+<body>
+	<div id="gridButton">Show/Hide The Grid System</div>
+	<div class="container">
+		<div class="grid">
+			<div class="col-1 banner">
+				<span>PARLOR HAIR STUDIO (about PARLOR)</span>
+			</div>
+			<nav class="col-1">
+			  <ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#news">News</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#contact">Contact</a></li>
+			  </ul>
+			</nav>
+			<section id="about" class="col-1">
+				<h2>About</h2>
+				Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra amet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+			</section>
+			<section id="news" class="col-1">
+				<h2>News</h2>
+				Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra amet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+			</section>
+			<section id="portfolio" class="col-1">
+				<h2>Portfolio</h2>
+				Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra amet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+			</section>
+			<section id="services" class="col-1">
+				<h2>Services</h2>
+				Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra amet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+			</section>
+			<section id="team" class="col-1">
+				<h2>The team</h2>
+				Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra amet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+			</section>
+			<section id="contact" class="col-1">
+				<h2>Contact</h2>
+				Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra amet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+			</section>
+			<section id="partners" class="col-1">
+				<h2>Our partners</h2>
+				Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra amet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+			</section>
+			<section id="follow" class="col-1">
+				<h2>Follow us on</h2>
+				Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra amet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+			</section>
+		</div>
+	</div>
+	<script>	
+		$(document).ready(function() { 		
+			$('nav').scrollToFixed();
+			
+			$('nav a').click(function(event) {
+				event.preventDefault();
+
+				var sectionId = $(this).attr('href');
+				$('html, body').animate({
+					scrollTop: $(sectionId).offset().top
+				}, 1000, function() {
+					location.href = sectionId;
+				});
+			});
+			
+		    $('#gridButton').click(function(event) {
+				$('.container').toggleClass("grid-visible");
+			});
+		});
+	</script>
+</body>
+</html>
