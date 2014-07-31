@@ -13,13 +13,31 @@
   display: table;
   clear: both;
 }
-.col-1 {	width: 100%; }
-.col-1-2 { width: 50%; }
-.col-1-4 {	width: 25%; }
-.col-1-6 {	width: 16.66%; }
-.col-1-8 {	width: 12.5%; }
-.col-1-12 {	width: 8.333%; }
-.col-1-24 {	width: 4.164%; }
+
+.col-1-24 {	width: 45px; }
+.col-2-24 {	width: 90px; }
+.col-3-24 {	width: 135px; }
+.col-4-24 {	width: 180px; }
+.col-5-24 {	width: 225px; }
+.col-6-24 {	width: 270px; }
+.col-7-24 {	width: 315px; }
+.col-8-24 {	width: 360px; }
+.col-9-24 {	width: 405px; }
+.col-10-24 {	width: 450px; }
+.col-11-24 {	width: 495px; }
+.col-12-24 {	width: 540px; }
+.col-13-24 {	width: 585px; }
+.col-14-24 {	width: 630px; }
+.col-15-24 {	width: 675px; }
+.col-16-24 {	width: 720px; }
+.col-17-24 {	width: 765px; }
+.col-18-24 {	width: 810px; }
+.col-19-24 {	width: 855px; }
+.col-20-24 {	width: 900px; }
+.col-21-24 {	width: 945px; }
+.col-22-24 {	width: 990px; }
+.col-23-24 {	width: 1035px; }
+.col-24-24 {	width: 1080px; }
 
 [class*='col-'] {
 	float: left;
