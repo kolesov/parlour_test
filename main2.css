@@ -1,0 +1,136 @@
+body {
+  margin:0;
+  padding:0;
+  background: #EEEAE1;
+  color: #FFFFFF;
+  font-family:"Lato", helvetica, sans-serif;
+}
+
+header {
+	height: 585px;
+}
+
+.parlor-logo-wrapper {
+	margin-top: 105px;
+}
+
+.parlor-logo {
+	position: relative;
+	background-color:rgba(255,255,255,0.25);
+	border: 3px solid #B39964;
+}
+
+.parlor-logo > span {
+	width: 100%;
+	display: block;
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+.parlor-logo > a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-transform:uppercase;
+	font-size: 13px;
+	margin-bottom: 25px;
+	height: 80px;
+}
+
+.parlor-logo > a > img {
+	display: block;
+	margin: 20px auto;
+}
+
+.to-top-label {
+	display: block;
+	width: 36px;
+	height: 62px;
+	background: url('images/top.png');
+}
+
+/* top slider */
+.top-slider-wrapper {
+	position: absolute;
+	top: 0;
+	width: 1360px;
+}
+.top-slider-wrapper .slider {
+	margin: 0px;
+}
+
+.top-slider-wrapper .bx-viewport {
+	left: 0px;
+	border: none;
+}
+/* top slider end */
+
+/* nav menu */
+.nav-wrapper {
+	background: white;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+	height: 90px;
+}
+
+.anchor{
+  display: block;
+  height: 90px; /*same height as nav*/
+  margin-top: -90px; /*same height as nav*/
+  visibility: hidden;
+}
+
+#logo-nav {
+	display: inline-block;
+}
+
+.nav-menu  {
+	display: inline-block;
+    list-style-type: none;
+	height: 90px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-size: 0.9em;
+}
+
+.nav-menu-item{
+    display: inline-block;
+	height: 100%;
+	padding-top: 25px;
+	margin-left: 15px;
+	margin-right: 35px;
+}
+a.nav-link {
+	color: black;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+.nav-menu-item.active {
+	border-bottom: 3px solid #B39964;
+}
+/* nav manu end*/
+
+/* section */
+section {
+	background: #EBE6DC;
+}
+
+section h2 {
+	text-align:center;
+	text-transform:uppercase;
+	font-weight: 300;
+	font-size: 20px;
+	color: black;
+	margin: 0;
+	padding: 40px 0;
+}
+section h2:before, section h2:after {
+	content: '—';
+	color: #B39964;
+}
+/* section end*/
